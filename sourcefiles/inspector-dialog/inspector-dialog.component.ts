@@ -21,7 +21,8 @@ export class InspectorDialogComponent implements OnInit {
     if (!path) {
       throw new Error('samplePath is not set.');
     }
-    this.sources.html = await this.getSourceFile(path, 'html');
+    const htmlFile = await this.getSourceFile(path, 'html');
+    this.sources.html = htmlFile.replace(/^\s*<app-inspector.*<\/app-inspector>$/mg, '').replace(/\n\s*\n\s*\n/g, '\n\n');
     this.sources.css = await this.getSourceFile(path, 'css');
     this.sources.typescript = await this.getSourceFile(path, 'ts');
   }
