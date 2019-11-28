@@ -19,7 +19,7 @@ export class InspectorComponent {
 
   inspect() {
     const cap = this.capService.contextualactionpanel(InspectorDialogComponent, this.viewRef);
-    cap.title('Inspector');
+    cap.title(`Inspecting Sample ${this.path}`);
     cap.apply(component => {
       component.samplePath = this.path;
     });

@@ -45914,7 +45914,7 @@ var __spread = (this && this.__spread) || function () {
                 InspectorComponent.prototype.inspect = function () {
                     var _this = this;
                     var cap = this.capService.contextualactionpanel(_inspector_dialog_inspector_dialog_component__WEBPACK_IMPORTED_MODULE_3__["InspectorDialogComponent"], this.viewRef);
-                    cap.title('Inspector');
+                    cap.title("Inspecting Sample " + this.path);
                     cap.apply(function (component) {
                         component.samplePath = _this.path;
                     });
