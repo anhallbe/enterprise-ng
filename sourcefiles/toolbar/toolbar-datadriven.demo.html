@@ -1,0 +1,33 @@
+<div class="row">
+
+  <div class="full-width column">
+
+    <soho-toolbar
+      #sohoToolbar
+      [maxVisibleButtons]="6">
+
+      <soho-toolbar-title>
+        <span class="page-title">{{sectionTitle}}</span>
+      </soho-toolbar-title>
+
+      <soho-toolbar-button-set>
+        <div class="searchfield-wrapper toolbar-searchfield-wrapper">
+          <label *ngIf="searchField" class="audible" attr.for="{{searchField.id}}">{{searchField.label}}</label>
+          <input *ngIf="searchField" soho-toolbar-searchfield class="searchfield" id="{{searchField.id}}" placeholder="{{searchField.label}}" name="{{searchField.label}}"/>
+        </div>
+
+        <!-- This example being dynamic doesnt work yet so removed for now -->
+        <button soho-menu-button>
+          <span>Action One</span>
+        </button>
+        <button soho-menu-button>
+          <span>Action Two</span>
+        </button>
+      </soho-toolbar-button-set>
+
+      <soho-toolbar-more-button></soho-toolbar-more-button>
+
+    </soho-toolbar>
+
+  </div>
+</div>

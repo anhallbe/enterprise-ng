@@ -1,0 +1,17 @@
+<figure
+  soho-hierarchy
+  #SohoHierarchy
+  *ngIf="data"
+  id="hierarchy-demo"
+  [dataset]="data"
+  [templateId]="leafTemplateId"
+  [legend]="legend"
+  [legendKey]="legendKey"
+
+  (selected)="onSelected($event)"
+  (doubleClick)="onDoubleClick($event)"
+>
+</figure>
+
+<!-- Leaf template for hierarchy control -->
+<soho-hierarchy-leaf-template [innerHtml]="leafTemplate"></soho-hierarchy-leaf-template>

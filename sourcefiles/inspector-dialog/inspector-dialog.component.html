@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="twelve-columns">
+        <div soho-tabs registerForEvents="activated">
+            <div soho-tab-list-container>
+                <ul soho-tab-list>
+                    <li soho-tab selected="true"><a soho-tab-title tabId="tab-html">HTML</a></li>
+                    <li soho-tab><a soho-tab-title tabId="tab-ts">TS</a></li>
+                    <li soho-tab><a soho-tab-title tabId="tab-css">CSS</a></li>
+                </ul>
+            </div>
+
+            <div soho-tab-panel-container style="background-color: whitesmoke;">
+                <div soho-tab-panel tabId="tab-html">
+                    <app-highlight language="html" [content]="sources.html"></app-highlight>
+                </div>
+                <div soho-tab-panel tabId="tab-ts">
+                    <app-highlight language="typescript" [content]="sources.typescript"></app-highlight>
+                </div>
+                <div soho-tab-panel tabId="tab-css">
+                    <app-highlight language="css" [content]="sources.css"></app-highlight>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

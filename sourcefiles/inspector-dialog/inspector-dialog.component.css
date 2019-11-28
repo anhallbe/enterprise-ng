@@ -1,0 +1,9 @@
+:host {
+    min-width: 90vw;
+    min-height: 90vh;
+    display: block;
+}
+
+[soho-tab-panel] {
+    padding: 20px;
+}

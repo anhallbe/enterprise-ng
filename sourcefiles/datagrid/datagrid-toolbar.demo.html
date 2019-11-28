@@ -1,0 +1,32 @@
+﻿<div soho-toolbar [maxVisibleButtons]="4">
+
+  <soho-toolbar-title>
+    <nav class="breadcrumb">
+      <ol aria-label="breadcrumb">
+        <li *ngFor="let b of breadcrumbs" [ngClass]="{'current': b.current}">
+          <a *ngIf="b.selectable" (click)="selectBreadcrumb(b)" href="#" class="hyperlink hide-focus">{{b.friendlyName}}</a>
+          <span *ngIf="!b.selectable">{{b.friendlyName}}</span>
+        </li>
+      </ol>
+    </nav>
+  </soho-toolbar-title>
+
+  <soho-toolbar-button-set>
+    <button id="refresh-item" soho-button="icon" icon="refresh">Refresh</button>
+
+    <div class="more">
+      <button class="btn btn-actions" soho-button="icon" icon="more">
+        <span class="audible">More Actions</span>
+      </button>
+      <ul class="popupmenu">
+        <li><a href="#">Refresh</a></li>
+        <li><a data-option="personalize-columns" href="#">Personalize Columns</a></li>
+        <li class="separator single-selectable-section"></li>
+        <li class="heading">Row Height</li>
+        <li class="is-selectable"><a data-option="row-short" href="#">Short</a></li>
+        <li class="is-selectable"><a data-option="row-medium" href="#">Medium</a></li>
+        <li class="is-selectable is-checked"><a data-option="row-normal" href="#">Normal</a></li>
+      </ul>
+    </div>
+  </soho-toolbar-button-set>
+</div>

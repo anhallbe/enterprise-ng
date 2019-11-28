@@ -26209,6 +26209,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/highlight/highlight.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/highlight/highlight.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<pre><code [innerHtml]=\"highlighted\"></code></pre>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/homepage/homepage-scenario-a.demo.html":
 /*!**********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/homepage/homepage-scenario-a.demo.html ***!
@@ -26287,6 +26300,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/inspector-dialog/inspector-dialog.component.html":
+/*!********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/inspector-dialog/inspector-dialog.component.html ***!
+  \********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row\">\n    <div class=\"twelve-columns\">\n        <div soho-tabs registerForEvents=\"activated\">\n            <div soho-tab-list-container>\n                <ul soho-tab-list>\n                    <li soho-tab selected=\"true\"><a soho-tab-title tabId=\"tab-html\">HTML</a></li>\n                    <li soho-tab><a soho-tab-title tabId=\"tab-ts\">TS</a></li>\n                    <li soho-tab><a soho-tab-title tabId=\"tab-css\">CSS</a></li>\n                </ul>\n            </div>\n\n            <div soho-tab-panel-container style=\"background-color: whitesmoke;\">\n                <div soho-tab-panel tabId=\"tab-html\">\n                    <app-highlight language=\"html\" [content]=\"sources.html\"></app-highlight>\n                </div>\n                <div soho-tab-panel tabId=\"tab-ts\">\n                    <app-highlight language=\"typescript\" [content]=\"sources.typescript\"></app-highlight>\n                </div>\n                <div soho-tab-panel tabId=\"tab-css\">\n                    <app-highlight language=\"css\" [content]=\"sources.css\"></app-highlight>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/inspector/inspector.component.html":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/inspector/inspector.component.html ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<button soho-button=\"icon\" icon=\"document\" title=\"Source\" (click)=\"inspect()\">Source</button>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/label/label.demo.html":
 /*!*****************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/label/label.demo.html ***!
@@ -26335,7 +26374,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row top-padding\">\n  <div class=\"two-thirds column\">\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Simple</h2>\n      </div>\n      <div class=\"card-content\">\n        <soho-listview #simpleSelectListView>\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\" [selected]=\"data.selected\">\n            Task #{{data.task}}\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"addItems()\">Add Item</button>\n    <button soho-button (click)=\"selectItems(singleSelectListView)\">Select Items</button>\n    <button soho-button (click)=\"unselectItems(singleSelectListView)\">Unselect Items</button>\n    <button soho-button (click)=\"removeItems(singleSelectListView)\">Remove Items</button>\n    <br/>\n    <br/>\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Single Select</h2>\n      </div>\n      <div class=\"card-content\">\n        <soho-listview\n          #singleSelectListView\n          (rendered)=\"onRendered($event)\"\n          (selected)=\"onSelected($event)\"\n          (sorted)=\"onSorted($event)\">\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\" [selected]=\"data.selected\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"selectItems(multipleSelectListView)\">Select Items</button>\n    <button soho-button (click)=\"unselectItems(multipleSelectListView)\">Unselect Items</button>\n    <button soho-button (click)=\"removeItems(multipleSelectListView)\">Remove Items</button>\n    <br/>\n    <br/>\n\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Multi Select</h2>\n      </div>\n      <div class=\"card-content\" style=\"overflow: hidden;\">\n        <soho-listview\n          #multipleSelectListView\n          selectable=\"multiple\"\n          (rendered)=\"onRendered($event)\"\n          (selected)=\"onSelected($event)\"\n          (sorted)=\"onSorted($event)\">\n          <soho-toolbar class=\"contextual-toolbar is-hidden\">\n            <soho-toolbar-button-set>\n              <button soho-button=\"tertiary\" title=\"Assign Selected Items\">Assign</button>\n              <button soho-button=\"tertiary\" title=\"Remove Selected Items\">Remove</button>\n            </soho-toolbar-button-set>\n          </soho-toolbar>\n          <li soho-listview-item *ngFor=\"let data of contentTypes\" [disabled]=\"data.disabled\" [selected]=\"data.selected\">\n            <p soho-listview-header>{{data.name}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Searchable</h2>\n      </div>\n      <div class=\"card-content\" style=\"overflow: hidden;\">\n        <soho-listview\n          [class]=\"'something-extra'\"\n          [dataset]=\"demoTasks\"\n          [searchable]=\"true\"\n          selectable=\"multiple\"\n          (rendered)=\"onRendered($event)\"\n          (selected)=\"onSelected($event)\"\n          (sorted)=\"onSorted($event)\"\n        >\n          <input soho-searchfield placeholder=\"Search\" [clearable]=\"true\">\n          <soho-toolbar class=\"contextual-toolbar is-hidden\">\n            <soho-toolbar-button-set>\n              <button soho-button=\"tertiary\" title=\"Assign Selected Items\">Assign</button>\n              <button soho-button=\"tertiary\" title=\"Remove Selected Items\">Remove</button>\n            </soho-toolbar-button-set>\n          </soho-toolbar>\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"load()\">Load</button>\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Searchable</h2>\n      </div>\n      <div class=\"card-content\">\n        <soho-listview\n          [dataset]=\"loadTasks\"\n          [searchable]=\"true\"\n          (selected)=\"onSelected($event)\">\n          <input soho-searchfield placeholder=\"Search\" [clearable]=\"true\">\n          <li soho-listview-item *ngFor=\"let data of loadTasks\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"activatedItem()\">Activated Item</button>\n    <button soho-button (click)=\"activateItem()\">Activate Item</button>\n    <button soho-button (click)=\"deactivateItem()\">Deactivate Item</button>\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Mixed Selection</h2>\n      </div>\n      <div class=\"card-content\" style=\"overflow: hidden;\">\n        <soho-listview\n          #mixedSelectionListView\n          [disableItemDeactivation]=\"true\"\n          [dataset]=\"demoTasks\"\n          [searchable]=\"true\"\n          [selectable]=\"'mixed'\"\n          (rendered)=\"onRendered($event)\"\n          (selected)=\"onSelected($event)\"\n          (sorted)=\"onSorted($event)\"\n          (itemactivated)=\"onItemActivated($event)\"\n          (itemdeactivated)=\"onItemDeactivated($event)\"\n        >\n          <input soho-searchfield placeholder=\"Search\" [clearable]=\"true\">\n          <soho-toolbar class=\"contextual-toolbar is-hidden\">\n            <soho-toolbar-button-set>\n              <button soho-button=\"tertiary\" title=\"Assign Selected Items\">Assign</button>\n              <button soho-button=\"tertiary\" title=\"Remove Selected Items\">Remove</button>\n            </soho-toolbar-button-set>\n          </soho-toolbar>\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row top-padding\">\n  <div class=\"two-thirds column\">\n    <app-inspector path=\"listview/listview\"></app-inspector>\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Simple</h2>\n      </div>\n      <div class=\"card-content\">\n        <soho-listview #simpleSelectListView>\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\" [selected]=\"data.selected\">\n            Task #{{data.task}}\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"addItems()\">Add Item</button>\n    <button soho-button (click)=\"selectItems(singleSelectListView)\">Select Items</button>\n    <button soho-button (click)=\"unselectItems(singleSelectListView)\">Unselect Items</button>\n    <button soho-button (click)=\"removeItems(singleSelectListView)\">Remove Items</button>\n    <br />\n    <br />\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Single Select</h2>\n      </div>\n      <div class=\"card-content\">\n        <soho-listview #singleSelectListView (rendered)=\"onRendered($event)\" (selected)=\"onSelected($event)\"\n          (sorted)=\"onSorted($event)\">\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\" [selected]=\"data.selected\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"selectItems(multipleSelectListView)\">Select Items</button>\n    <button soho-button (click)=\"unselectItems(multipleSelectListView)\">Unselect Items</button>\n    <button soho-button (click)=\"removeItems(multipleSelectListView)\">Remove Items</button>\n    <br />\n    <br />\n\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Multi Select</h2>\n      </div>\n      <div class=\"card-content\" style=\"overflow: hidden;\">\n        <soho-listview #multipleSelectListView selectable=\"multiple\" (rendered)=\"onRendered($event)\"\n          (selected)=\"onSelected($event)\" (sorted)=\"onSorted($event)\">\n          <soho-toolbar class=\"contextual-toolbar is-hidden\">\n            <soho-toolbar-button-set>\n              <button soho-button=\"tertiary\" title=\"Assign Selected Items\">Assign</button>\n              <button soho-button=\"tertiary\" title=\"Remove Selected Items\">Remove</button>\n            </soho-toolbar-button-set>\n          </soho-toolbar>\n          <li soho-listview-item *ngFor=\"let data of contentTypes\" [disabled]=\"data.disabled\"\n            [selected]=\"data.selected\">\n            <p soho-listview-header>{{data.name}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Searchable</h2>\n      </div>\n      <div class=\"card-content\" style=\"overflow: hidden;\">\n        <soho-listview [class]=\"'something-extra'\" [dataset]=\"demoTasks\" [searchable]=\"true\" selectable=\"multiple\"\n          (rendered)=\"onRendered($event)\" (selected)=\"onSelected($event)\" (sorted)=\"onSorted($event)\">\n          <input soho-searchfield placeholder=\"Search\" [clearable]=\"true\">\n          <soho-toolbar class=\"contextual-toolbar is-hidden\">\n            <soho-toolbar-button-set>\n              <button soho-button=\"tertiary\" title=\"Assign Selected Items\">Assign</button>\n              <button soho-button=\"tertiary\" title=\"Remove Selected Items\">Remove</button>\n            </soho-toolbar-button-set>\n          </soho-toolbar>\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"load()\">Load</button>\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Searchable</h2>\n      </div>\n      <div class=\"card-content\">\n        <soho-listview [dataset]=\"loadTasks\" [searchable]=\"true\" (selected)=\"onSelected($event)\">\n          <input soho-searchfield placeholder=\"Search\" [clearable]=\"true\">\n          <li soho-listview-item *ngFor=\"let data of loadTasks\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"two-thirds column\">\n    <button soho-button (click)=\"activatedItem()\">Activated Item</button>\n    <button soho-button (click)=\"activateItem()\">Activate Item</button>\n    <button soho-button (click)=\"deactivateItem()\">Deactivate Item</button>\n    <div class=\"card\">\n      <div class=\"card-header\">\n        <h2 class=\"card-title\">Tasks - Mixed Selection</h2>\n      </div>\n      <div class=\"card-content\" style=\"overflow: hidden;\">\n        <soho-listview #mixedSelectionListView [disableItemDeactivation]=\"true\" [dataset]=\"demoTasks\"\n          [searchable]=\"true\" [selectable]=\"'mixed'\" (rendered)=\"onRendered($event)\" (selected)=\"onSelected($event)\"\n          (sorted)=\"onSorted($event)\" (itemactivated)=\"onItemActivated($event)\"\n          (itemdeactivated)=\"onItemDeactivated($event)\">\n          <input soho-searchfield placeholder=\"Search\" [clearable]=\"true\">\n          <soho-toolbar class=\"contextual-toolbar is-hidden\">\n            <soho-toolbar-button-set>\n              <button soho-button=\"tertiary\" title=\"Assign Selected Items\">Assign</button>\n              <button soho-button=\"tertiary\" title=\"Remove Selected Items\">Remove</button>\n            </soho-toolbar-button-set>\n          </soho-toolbar>\n          <li soho-listview-item *ngFor=\"let data of demoTasks\" [disabled]=\"data.disabled\">\n            <p soho-listview-header>Task #{{data.task}}</p>\n            <p soho-listview-subheader>{{data.desc}}</p>\n            <p soho-listview-micro>DUE: {{data.date}}</p>\n          </li>\n        </soho-listview>\n      </div>\n    </div>\n  </div>\n\n</div>\n");
 
 /***/ }),
 
@@ -27628,7 +27667,7 @@ function __importDefault(mod) {
 /*! exports provided: name, scripts, private, dependencies, devDependencies, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"name\":\"ids-enterprise-ng-app\",\"scripts\":{\"ng-high-memory\":\"node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng\",\"ng\":\"npx ng\",\"start\":\"npx ng serve\",\"build\":\"npm run build:lib && npm run build:app\",\"build:lib\":\"npm run sync:lib && npx ng build ids-enterprise-ng --prod\",\"build:app\":\"npx ng build\",\"test:lib\":\"npx ng test ids-enterprise-ng --watch=false\",\"test:app\":\"npx ng test --watch=false\",\"pack:lib\":\"cd dist/ids-enterprise-ng && npm pack\",\"package\":\"npm run build:lib && npm pack\",\"test\":\"npx ng test ids-enterprise-ng --code-coverage --watch=false\",\"testwatch\":\"npx ng test ids-enterprise-ng --code-coverage --watch=true\",\"testdebug\":\"npx ng test ids-enterprise-ng --code-coverage --watch=true --browsers Chrome\",\"lint\":\"npx ng lint && npm run mdlint\",\"mdlint\":\"npm run mdlint:docs && npm run mdlint:src\",\"mdlint:src\":\"npx markdownlint ./projects/ids-enterprise-ng/src/\",\"mdlint:docs\":\"npx markdownlint docs/ && npx markdownlint README.md\",\"e2e\":\"npx ng e2e\",\"update-enterprise\":\"node ./scripts/update-ids-enterprise.js\",\"version-bump:dev\":\"node ./scripts/version-append-date\",\"release:dev\":\"npm run update-enterprise && npm run version-bump:dev && node scripts/release-dev.js\",\"release:alpha\":\"cd projects/ids-enterprise-ng && release-it minor --preRelease=alpha --no-github.release\",\"release:beta\":\"cd projects/ids-enterprise-ng && release-it minor --preRelease=beta --no-github.release\",\"release:rc\":\"cd projects/ids-enterprise-ng && release-it --preRelease=rc --no-github.release\",\"release:final\":\"cd projects/ids-enterprise-ng && release-it\",\"sync:lib\":\"node ./scripts/version-sync.js\",\"deploy\":\"npm run build:lib && npx ng build --base-href=/enterprise-ng/ && npx ng deploy\"},\"private\":true,\"dependencies\":{\"@angular/animations\":\"~8.2.14\",\"@angular/common\":\"~8.2.14\",\"@angular/compiler\":\"~8.2.14\",\"@angular/core\":\"~8.2.14\",\"@angular/forms\":\"~8.2.14\",\"@angular/platform-browser\":\"~8.2.14\",\"@angular/platform-browser-dynamic\":\"~8.2.14\",\"@angular/router\":\"~8.2.14\",\"angular-cli-ghpages\":\"^0.6.0\",\"classlist.js\":\"^1.1.20150312\",\"core-js\":\"^2.5.4\",\"d3\":\"4.13.0\",\"fix\":\"0.0.6\",\"ids-enterprise\":\"4.24.0-dev.20191121\",\"jquery\":\"^3.4.1\",\"lscache\":\"^1.2.0\",\"rxjs\":\"~6.5.2\",\"tslib\":\"^1.10.0\",\"zone.js\":\"~0.9.1\"},\"devDependencies\":{\"@angular-devkit/build-angular\":\"^0.803.19\",\"@angular-devkit/build-ng-packagr\":\"~0.803.19\",\"@angular/cli\":\"^8.3.19\",\"@angular/compiler-cli\":\"~8.2.14\",\"@angular/language-service\":\"~8.2.14\",\"@types/d3\":\"4.13.0\",\"@types/jasmine\":\"~2.8.8\",\"@types/jasminewd2\":\"~2.0.3\",\"@types/jquery\":\"3.3.29\",\"@types/lscache\":\"^1.0.29\",\"@types/node\":\"~8.9.4\",\"chalk\":\"^2.4.1\",\"codelyzer\":\"^5.0.0\",\"del\":\"^2.2.2\",\"htmlhint\":\"^0.11.0\",\"inquirer\":\"^6.0.0\",\"jasmine-core\":\"~3.4.0\",\"jasmine-spec-reporter\":\"~4.2.1\",\"karma\":\"~4.1.0\",\"karma-bamboo-reporter\":\"^0.1.2\",\"karma-chrome-launcher\":\"~2.2.0\",\"karma-cli\":\"~1.0.1\",\"karma-coverage-istanbul-reporter\":\"~2.0.1\",\"karma-jasmine\":\"~2.0.1\",\"karma-jasmine-html-reporter\":\"^1.4.0\",\"karma-mocha-reporter\":\"^2.2.5\",\"karma-phantomjs-launcher\":\"^1.0.4\",\"markdownlint-cli\":\"^0.15.0\",\"merge-stream\":\"^1.0.1\",\"ng-packagr\":\"^5.5.0\",\"protractor\":\"~5.4.0\",\"puppeteer\":\"^1.13.0\",\"release-it\":\"^10.4.5\",\"slash\":\"^2.0.0\",\"ts-node\":\"~7.0.0\",\"tsickle\":\"^0.37.0\",\"tslint\":\"~5.15.0\",\"typescript\":\"~3.5.3\",\"yargs\":\"^12.0.1\"}}");
+module.exports = JSON.parse("{\"name\":\"ids-enterprise-ng-app\",\"scripts\":{\"ng-high-memory\":\"node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng\",\"ng\":\"npx ng\",\"start\":\"npx ng serve\",\"build\":\"npm run build:lib && npm run build:app\",\"build:lib\":\"npm run sync:lib && npx ng build ids-enterprise-ng --prod\",\"build:app\":\"npx ng build\",\"test:lib\":\"npx ng test ids-enterprise-ng --watch=false\",\"test:app\":\"npx ng test --watch=false\",\"pack:lib\":\"cd dist/ids-enterprise-ng && npm pack\",\"package\":\"npm run build:lib && npm pack\",\"test\":\"npx ng test ids-enterprise-ng --code-coverage --watch=false\",\"testwatch\":\"npx ng test ids-enterprise-ng --code-coverage --watch=true\",\"testdebug\":\"npx ng test ids-enterprise-ng --code-coverage --watch=true --browsers Chrome\",\"lint\":\"npx ng lint && npm run mdlint\",\"mdlint\":\"npm run mdlint:docs && npm run mdlint:src\",\"mdlint:src\":\"npx markdownlint ./projects/ids-enterprise-ng/src/\",\"mdlint:docs\":\"npx markdownlint docs/ && npx markdownlint README.md\",\"e2e\":\"npx ng e2e\",\"update-enterprise\":\"node ./scripts/update-ids-enterprise.js\",\"version-bump:dev\":\"node ./scripts/version-append-date\",\"release:dev\":\"npm run update-enterprise && npm run version-bump:dev && node scripts/release-dev.js\",\"release:alpha\":\"cd projects/ids-enterprise-ng && release-it minor --preRelease=alpha --no-github.release\",\"release:beta\":\"cd projects/ids-enterprise-ng && release-it minor --preRelease=beta --no-github.release\",\"release:rc\":\"cd projects/ids-enterprise-ng && release-it --preRelease=rc --no-github.release\",\"release:final\":\"cd projects/ids-enterprise-ng && release-it\",\"sync:lib\":\"node ./scripts/version-sync.js\",\"deploy\":\"npm run build:lib && npx ng build --base-href=/enterprise-ng/ && npx ng deploy\"},\"private\":true,\"dependencies\":{\"@angular/animations\":\"~8.2.14\",\"@angular/common\":\"~8.2.14\",\"@angular/compiler\":\"~8.2.14\",\"@angular/core\":\"~8.2.14\",\"@angular/forms\":\"~8.2.14\",\"@angular/platform-browser\":\"~8.2.14\",\"@angular/platform-browser-dynamic\":\"~8.2.14\",\"@angular/router\":\"~8.2.14\",\"angular-cli-ghpages\":\"^0.6.0\",\"classlist.js\":\"^1.1.20150312\",\"core-js\":\"^2.5.4\",\"d3\":\"4.13.0\",\"fix\":\"0.0.6\",\"highlight.js\":\"^9.16.2\",\"ids-enterprise\":\"4.24.0-dev.20191121\",\"jquery\":\"^3.4.1\",\"lscache\":\"^1.2.0\",\"rxjs\":\"~6.5.2\",\"tslib\":\"^1.10.0\",\"zone.js\":\"~0.9.1\"},\"devDependencies\":{\"@angular-devkit/build-angular\":\"^0.803.19\",\"@angular-devkit/build-ng-packagr\":\"~0.803.19\",\"@angular/cli\":\"^8.3.19\",\"@angular/compiler-cli\":\"~8.2.14\",\"@angular/language-service\":\"~8.2.14\",\"@types/d3\":\"4.13.0\",\"@types/highlight.js\":\"^9.12.3\",\"@types/jasmine\":\"~2.8.8\",\"@types/jasminewd2\":\"~2.0.3\",\"@types/jquery\":\"3.3.29\",\"@types/lscache\":\"^1.0.29\",\"@types/node\":\"~8.9.4\",\"chalk\":\"^2.4.1\",\"codelyzer\":\"^5.0.0\",\"del\":\"^2.2.2\",\"htmlhint\":\"^0.11.0\",\"inquirer\":\"^6.0.0\",\"jasmine-core\":\"~3.4.0\",\"jasmine-spec-reporter\":\"~4.2.1\",\"karma\":\"~4.1.0\",\"karma-bamboo-reporter\":\"^0.1.2\",\"karma-chrome-launcher\":\"~2.2.0\",\"karma-cli\":\"~1.0.1\",\"karma-coverage-istanbul-reporter\":\"~2.0.1\",\"karma-jasmine\":\"~2.0.1\",\"karma-jasmine-html-reporter\":\"^1.4.0\",\"karma-mocha-reporter\":\"^2.2.5\",\"karma-phantomjs-launcher\":\"^1.0.4\",\"markdownlint-cli\":\"^0.15.0\",\"merge-stream\":\"^1.0.1\",\"ng-packagr\":\"^5.5.0\",\"protractor\":\"~5.4.0\",\"puppeteer\":\"^1.13.0\",\"release-it\":\"^10.4.5\",\"slash\":\"^2.0.0\",\"ts-node\":\"~7.0.0\",\"tsickle\":\"^0.37.0\",\"tslint\":\"~5.15.0\",\"typescript\":\"~3.5.3\",\"yargs\":\"^12.0.1\"}}");
 
 /***/ }),
 
@@ -28194,6 +28233,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wizard_wizard_validation_rules_page_demo__WEBPACK_IMPORTED_MODULE_196__ = __webpack_require__(/*! ./wizard/wizard-validation-rules-page.demo */ "./src/app/wizard/wizard-validation-rules-page.demo.ts");
 /* harmony import */ var _locale_initializer_locale_initializer_module__WEBPACK_IMPORTED_MODULE_197__ = __webpack_require__(/*! ./locale-initializer/locale-initializer.module */ "./src/app/locale-initializer/locale-initializer.module.ts");
 /* harmony import */ var _application_menu_application_menu_roleswitcher_demo__WEBPACK_IMPORTED_MODULE_198__ = __webpack_require__(/*! ./application-menu/application-menu-roleswitcher.demo */ "./src/app/application-menu/application-menu-roleswitcher.demo.ts");
+/* harmony import */ var _inspector_inspector_component__WEBPACK_IMPORTED_MODULE_199__ = __webpack_require__(/*! ./inspector/inspector.component */ "./src/app/inspector/inspector.component.ts");
+/* harmony import */ var _inspector_dialog_inspector_dialog_component__WEBPACK_IMPORTED_MODULE_200__ = __webpack_require__(/*! ./inspector-dialog/inspector-dialog.component */ "./src/app/inspector-dialog/inspector-dialog.component.ts");
+/* harmony import */ var _highlight_highlight_component__WEBPACK_IMPORTED_MODULE_201__ = __webpack_require__(/*! ./highlight/highlight.component */ "./src/app/highlight/highlight.component.ts");
+
+
+
 
 
 
@@ -28593,6 +28638,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _wizard_wizard_backup_rule_page_demo__WEBPACK_IMPORTED_MODULE_190__["WizardDemoBackupRulePageComponent"],
             _wizard_wizard_result_page_demo__WEBPACK_IMPORTED_MODULE_193__["WizardDemoResultPageComponent"],
             _wizard_wizard_validation_rules_page_demo__WEBPACK_IMPORTED_MODULE_196__["WizardDemoValidationRulesPageComponent"],
+            _inspector_inspector_component__WEBPACK_IMPORTED_MODULE_199__["InspectorComponent"],
+            _inspector_dialog_inspector_dialog_component__WEBPACK_IMPORTED_MODULE_200__["InspectorDialogComponent"],
+            _highlight_highlight_component__WEBPACK_IMPORTED_MODULE_201__["HighlightComponent"]
         ],
         imports: [
             _app_routes__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
@@ -28618,7 +28666,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _datagrid_datagrid_angular_formatter_demo__WEBPACK_IMPORTED_MODULE_48__["ButtonCellFormatterComponent"],
             _datagrid_datagrid_angular_formatter_demo__WEBPACK_IMPORTED_MODULE_48__["PriceCellFormatterComponent"],
             _datagrid_datagrid_code_block_editor_demo__WEBPACK_IMPORTED_MODULE_52__["CodeBlockEditorComponent"],
-            _datagrid_datagrid_angular_card_formatter_demo__WEBPACK_IMPORTED_MODULE_49__["CardFormatterComponent"]
+            _datagrid_datagrid_angular_card_formatter_demo__WEBPACK_IMPORTED_MODULE_49__["CardFormatterComponent"],
+            _inspector_dialog_inspector_dialog_component__WEBPACK_IMPORTED_MODULE_200__["InspectorDialogComponent"],
+            _highlight_highlight_component__WEBPACK_IMPORTED_MODULE_201__["HighlightComponent"],
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })
@@ -43368,6 +43418,68 @@ HierarchyDemoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/highlight/highlight.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/highlight/highlight.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hpZ2hsaWdodC9oaWdobGlnaHQuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/highlight/highlight.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/highlight/highlight.component.ts ***!
+  \**************************************************/
+/*! exports provided: HighlightComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HighlightComponent", function() { return HighlightComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var highlight_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highlight.js */ "./node_modules/highlight.js/lib/index.js");
+/* harmony import */ var highlight_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highlight_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+let HighlightComponent = class HighlightComponent {
+    constructor() { }
+    set content(content) {
+        if (content) {
+            this.highlighted = Object(highlight_js__WEBPACK_IMPORTED_MODULE_2__["highlight"])(this.language, content).value;
+        }
+        else {
+            this.highlighted = '';
+        }
+    }
+    ngOnInit() {
+    }
+};
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], HighlightComponent.prototype, "language", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], HighlightComponent.prototype, "content", null);
+HighlightComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-highlight',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./highlight.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/highlight/highlight.component.html")).default,
+        changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./highlight.component.css */ "./src/app/highlight/highlight.component.css")).default]
+    })
+], HighlightComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/homepage/homepage-scenario-a.demo.ts":
 /*!******************************************************!*\
   !*** ./src/app/homepage/homepage-scenario-a.demo.ts ***!
@@ -43626,6 +43738,157 @@ IconDemoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./icon.demo.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/icon/icon.demo.html")).default
     })
 ], IconDemoComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/inspector-dialog/inspector-dialog.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/inspector-dialog/inspector-dialog.component.css ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (":host {\n    min-width: 90vw;\n    min-height: 90vh;\n    display: block;\n}\n\n[soho-tab-panel] {\n    padding: 20px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaW5zcGVjdG9yLWRpYWxvZy9pbnNwZWN0b3ItZGlhbG9nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvaW5zcGVjdG9yLWRpYWxvZy9pbnNwZWN0b3ItZGlhbG9nLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdCB7XG4gICAgbWluLXdpZHRoOiA5MHZ3O1xuICAgIG1pbi1oZWlnaHQ6IDkwdmg7XG4gICAgZGlzcGxheTogYmxvY2s7XG59XG5cbltzb2hvLXRhYi1wYW5lbF0ge1xuICAgIHBhZGRpbmc6IDIwcHg7XG59XG4iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/inspector-dialog/inspector-dialog.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/inspector-dialog/inspector-dialog.component.ts ***!
+  \****************************************************************/
+/*! exports provided: InspectorDialogComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InspectorDialogComponent", function() { return InspectorDialogComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
+
+
+let InspectorDialogComponent = class InspectorDialogComponent {
+    constructor(httpClient) {
+        this.httpClient = httpClient;
+        this.sources = {};
+    }
+    ngOnInit() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const path = this.samplePath;
+            if (!path) {
+                throw new Error('samplePath is not set.');
+            }
+            this.sources.html = yield this.getSourceFile(path, 'html');
+            this.sources.css = yield this.getSourceFile(path, 'css');
+            this.sources.typescript = yield this.getSourceFile(path, 'ts');
+        });
+    }
+    getSourceFile(path, extension) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const sourceFilePath = `sourcefiles/${path}.demo.${extension}`;
+            return this.httpClient.get(sourceFilePath, { responseType: 'text' }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(err => {
+                console.debug('Failed to get source file at', sourceFilePath, err);
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])('');
+            })).toPromise();
+        });
+    }
+};
+InspectorDialogComponent.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"])()
+], InspectorDialogComponent.prototype, "samplePath", void 0);
+InspectorDialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        selector: 'app-inspector-dialog',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./inspector-dialog.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/inspector-dialog/inspector-dialog.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./inspector-dialog.component.css */ "./src/app/inspector-dialog/inspector-dialog.component.css")).default]
+    })
+], InspectorDialogComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/inspector/inspector.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/inspector/inspector.component.css ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2luc3BlY3Rvci9pbnNwZWN0b3IuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/inspector/inspector.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/inspector/inspector.component.ts ***!
+  \**************************************************/
+/*! exports provided: InspectorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InspectorComponent", function() { return InspectorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var ids_enterprise_ng__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ids-enterprise-ng */ "./dist/ids-enterprise-ng/fesm2015/ids-enterprise-ng.js");
+/* harmony import */ var _inspector_dialog_inspector_dialog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../inspector-dialog/inspector-dialog.component */ "./src/app/inspector-dialog/inspector-dialog.component.ts");
+
+
+
+
+let InspectorComponent = class InspectorComponent {
+    constructor(capService, viewRef) {
+        this.capService = capService;
+        this.viewRef = viewRef;
+    }
+    inspect() {
+        const cap = this.capService.contextualactionpanel(_inspector_dialog_inspector_dialog_component__WEBPACK_IMPORTED_MODULE_3__["InspectorDialogComponent"], this.viewRef);
+        cap.title('Inspector');
+        cap.apply(component => {
+            component.samplePath = this.path;
+        });
+        cap.modalSettings({ fullsize: 'responsive', breakpoint: 'phablet' });
+        cap.buttons([{
+                text: 'Close',
+                cssClass: 'btn',
+                icon: '#icon-close',
+                click: () => {
+                    cap.close(true);
+                },
+                isDefault: true
+            }]);
+        cap.open();
+    }
+};
+InspectorComponent.ctorParameters = () => [
+    { type: ids_enterprise_ng__WEBPACK_IMPORTED_MODULE_2__["SohoContextualActionPanelService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
+], InspectorComponent.prototype, "path", void 0);
+InspectorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-inspector',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./inspector.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/inspector/inspector.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./inspector.component.css */ "./src/app/inspector/inspector.component.css")).default]
+    })
+], InspectorComponent);
 
 
 
