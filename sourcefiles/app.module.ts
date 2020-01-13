@@ -226,6 +226,7 @@ import { ApplicationMenuRoleSwitcherDemoComponent } from './application-menu/app
 import { InspectorComponent } from './inspector/inspector.component';
 import { InspectorDialogComponent } from './inspector-dialog/inspector-dialog.component';
 import { HighlightComponent } from './highlight/highlight.component';
+import { DataGridTreeGridCubeDemoComponent } from './datagrid/datagrid-treegrid-cube.demo';
 
 @NgModule({
   declarations: [
@@ -301,6 +302,7 @@ import { HighlightComponent } from './highlight/highlight.component';
     DataGridTestSettingsDemoComponent,
     DataGridToolbarDemoComponent,
     DataGridTreeGridDemoComponent,
+    DataGridTreeGridCubeDemoComponent,
     DatagridTreegridDynamicfilteringDemoComponent,
     DataGridGroupableDemoComponent,
     DatepickerDemoComponent,

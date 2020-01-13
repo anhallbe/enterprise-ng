@@ -18,7 +18,7 @@ module.exports = [[module.i, "/*\n\ngithub.com style (c) Vasily Polovnyov <vast@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RSIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cbiJdfQ== */", '', '']]
+module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n\n#compound_field_popdown_contents.popdown {\n  width: 700px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RTs7QUFFOUU7RUFDRSxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL3N0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXG5cbiNjb21wb3VuZF9maWVsZF9wb3Bkb3duX2NvbnRlbnRzLnBvcGRvd24ge1xuICB3aWR0aDogNzAwcHg7XG59XG4iXX0= */", '', '']]
 
 /***/ }),
 
@@ -376,8 +376,8 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/ahallberg/code/enterprise-ng/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /Users/ahallberg/code/enterprise-ng/node_modules/highlight.js/styles/github.css */"./node_modules/highlight.js/styles/github.css");
+__webpack_require__(/*! D:\enterprise-ng\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! D:\enterprise-ng\node_modules\highlight.js\styles\github.css */"./node_modules/highlight.js/styles/github.css");
 
 
 /***/ })
