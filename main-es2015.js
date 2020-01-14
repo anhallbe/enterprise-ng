@@ -26171,6 +26171,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/form-modal.component.html":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/form-modal.component.html ***!
+  \**********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"field\">\n  <label class=\"required\">Required Textarea</label>\n  <textarea soho-textarea [resizable]=\"true\" data-validate=\"required\"></textarea>\n</div>\n<div class=\"field\">\n  <label class=\"required\">Required Text Input</label>\n  <input type=\"text\" data-validate=\"required\">\n</div>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/modal-dialog-datagrid.component.html":
 /*!*********************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/modal-dialog-datagrid.component.html ***!
@@ -26193,7 +26206,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Soho Modal (NEW)</h2>\n    <div class=\"row\">\n      <button id=\"openSimpleBtn\" soho-button (click)=\"openSimple()\">Open {{ dialogRef ? 'Existing' : 'New' }} Modal</button>\n      <input soho-checkbox type=\"checkbox\" id=\"allow-open-checkbox\" [(ngModel)]=\"allowOpen\">\n      <label soho-label for=\"allow-open-checkbox\" [forCheckBox]=\"true\">Allow Open</label>\n    </div>\n    <button id=\"destroyBtn\" soho-button (click)=\"destroyModal()\" *ngIf=\"dialogRef\">Destroy Modal</button>\n    <h2 class=\"fieldset-title\">Soho Modal Dialog</h2>\n    <div class=\"field\">\n      <button id=\"openFullSize\" soho-button (click)=\"openFullSize()\">Full on Tablet</button>\n      <button id=\"open-nested-btn\" soho-button (click)=\"openNested()\">Nested</button>\n      <button id=\"open-message-btn\" soho-button (click)=\"openMessage()\">Message</button>\n      <button id=\"open-vetoable-btn\" soho-button (click)=\"openVetoable()\">Vetoable</button>\n      <button id=\"open-dialog-result-btn\" soho-button (click)=\"openDialogResult()\">Dialog Result</button>\n      <button id=\"open-dialog-datagrid-btn\" soho-button (click)=\"openDialogDataGrid()\">Dialog with DataGrid</button>\n    </div>\n  </div>\n</div>\n\n<div></div>\n\n<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Dialog Options</h2>\n    <div class=\"field\">\n      <label class=\"center-block\">Dialog Title:\n        <input id=\"dialogTitleInput\" soho-input class=\"form-control\" type=\"text\" name=\"title\" [(ngModel)]=\"title\" />\n      </label>\n      <input soho-checkbox id=\"id4\" name=\"isAlert\" [(ngModel)]=\"isAlert\">\n      <label soho-label class=\"center-block\" for=\"id4\" [forCheckBox]=\"true\">Is Alert</label>\n    </div>\n    <p>\n      Last Dialog Result: {{closeResult}}\n    </p>\n  </div>\n</div>\n\n\n<div id=\"modal\" class=\"modal\">\n  <div class=\"modal-content\">\n    <div class=\"modal-header\">\n      <h1 class=\"modal-title\">Add Comment</h1>\n    </div>\n\n    <div class=\"modal-body-wrapper\">\n      <div class=\"modal-body\">\n        <div class=\"row form-responsive no-indent\">\n          <div class=\"full-width column\">\n            <div class=\"field\">\n              <label for=\"context-type\">Type</label>\n              <select class=\"dropdown\" id=\"context-type\" name=\"type\">\n                <option value=\"1\">Context #1</option>\n                <option value=\"2\">Context #2</option>\n                <option value=\"3\">Context #3</option>\n                <option value=\"4\">Context #4</option>\n                <option value=\"5\">Context #5</option>\n              </select>\n            </div>\n\n            <div class=\"field\">\n              <label for=\"context-name\" class=\"required\">Name</label>\n              <input id=\"context-name\"  aria-required=\"true\" name=\"context-name\" type=\"text\"/>\n            </div>\n\n            <div class=\"field\">\n             <label for=\"context-desc\" class=\"required\">Page Title</label>\n             <textarea id=\"context-desc\" aria-required=\"true\" name=\"context-desc\" maxlength=\"50\"></textarea>\n            </div>\n          </div>\n        </div>\n        <div class=\"modal-buttonset\">\n          <button type=\"button\" class=\"btn-modal\">Cancel</button>\n          <button type=\"button\" id=\"submit\" class=\"btn-modal-primary\">Submit</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<br>\n\n<!-- div #dialogPlaceholder will contain the child component -->\n<div #dialogPlaceholder></div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Soho Modal (NEW)</h2>\n    <div class=\"row\">\n      <button id=\"openSimpleBtn\" soho-button (click)=\"openSimple()\">Open {{ dialogRef ? 'Existing' : 'New' }} Modal</button>\n      <input soho-checkbox type=\"checkbox\" id=\"allow-open-checkbox\" [(ngModel)]=\"allowOpen\">\n      <label soho-label for=\"allow-open-checkbox\" [forCheckBox]=\"true\">Allow Open</label>\n    </div>\n    <button id=\"destroyBtn\" soho-button (click)=\"destroyModal()\" *ngIf=\"dialogRef\">Destroy Modal</button>\n    <h2 class=\"fieldset-title\">Soho Modal Dialog</h2>\n    <div class=\"field\">\n      <button id=\"openFullSize\" soho-button (click)=\"openFullSize()\">Full on Tablet</button>\n      <button id=\"open-nested-btn\" soho-button (click)=\"openNested()\">Nested</button>\n      <button id=\"open-message-btn\" soho-button (click)=\"openMessage()\">Message</button>\n      <button id=\"open-vetoable-btn\" soho-button (click)=\"openVetoable()\">Vetoable</button>\n      <button id=\"open-dialog-result-btn\" soho-button (click)=\"openDialogResult()\">Dialog Result</button>\n      <button id=\"open-dialog-datagrid-btn\" soho-button (click)=\"openDialogDataGrid()\">Dialog with DataGrid</button>\n      <button id=\"open-dialog-datagrid-btn\" soho-button (click)=\"openDialogForm()\">Dialog with TextArea</button>\n    </div>\n  </div>\n</div>\n\n<div></div>\n\n<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Dialog Options</h2>\n    <div class=\"field\">\n      <label class=\"center-block\">Dialog Title:\n        <input id=\"dialogTitleInput\" soho-input class=\"form-control\" type=\"text\" name=\"title\" [(ngModel)]=\"title\" />\n      </label>\n      <input soho-checkbox id=\"id4\" name=\"isAlert\" [(ngModel)]=\"isAlert\">\n      <label soho-label class=\"center-block\" for=\"id4\" [forCheckBox]=\"true\">Is Alert</label>\n    </div>\n    <p>\n      Last Dialog Result: {{closeResult}}\n    </p>\n  </div>\n</div>\n\n\n<div id=\"modal\" class=\"modal\">\n  <div class=\"modal-content\">\n    <div class=\"modal-header\">\n      <h1 class=\"modal-title\">Add Comment</h1>\n    </div>\n\n    <div class=\"modal-body-wrapper\">\n      <div class=\"modal-body\">\n        <div class=\"row form-responsive no-indent\">\n          <div class=\"full-width column\">\n            <div class=\"field\">\n              <label for=\"context-type\">Type</label>\n              <select class=\"dropdown\" id=\"context-type\" name=\"type\">\n                <option value=\"1\">Context #1</option>\n                <option value=\"2\">Context #2</option>\n                <option value=\"3\">Context #3</option>\n                <option value=\"4\">Context #4</option>\n                <option value=\"5\">Context #5</option>\n              </select>\n            </div>\n\n            <div class=\"field\">\n              <label for=\"context-name\" class=\"required\">Name</label>\n              <input id=\"context-name\"  aria-required=\"true\" name=\"context-name\" type=\"text\"/>\n            </div>\n\n            <div class=\"field\">\n             <label for=\"context-desc\" class=\"required\">Page Title</label>\n             <textarea id=\"context-desc\" aria-required=\"true\" name=\"context-desc\" maxlength=\"50\"></textarea>\n            </div>\n          </div>\n        </div>\n        <div class=\"modal-buttonset\">\n          <button type=\"button\" class=\"btn-modal\">Cancel</button>\n          <button type=\"button\" id=\"submit\" class=\"btn-modal-primary\">Submit</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<br>\n\n<!-- div #dialogPlaceholder will contain the child component -->\n<div #dialogPlaceholder></div>\n");
 
 /***/ }),
 
@@ -45422,6 +45435,32 @@ ExampleModalDialogComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/modal-dialog/form-modal.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/modal-dialog/form-modal.component.ts ***!
+  \******************************************************/
+/*! exports provided: FormModalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormModalComponent", function() { return FormModalComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let FormModalComponent = class FormModalComponent {
+};
+FormModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./form-modal.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/form-modal.component.html")).default,
+    })
+], FormModalComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/modal-dialog/groups.json":
 /*!******************************************!*\
   !*** ./src/app/modal-dialog/groups.json ***!
@@ -45532,6 +45571,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./vetoable-modal-dialog.component */ "./src/app/modal-dialog/vetoable-modal-dialog.component.ts");
 /* harmony import */ var _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modal-dialog-datagrid.component */ "./src/app/modal-dialog/modal-dialog-datagrid.component.ts");
 /* harmony import */ var _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./example-fullsize-modal.component */ "./src/app/modal-dialog/example-fullsize-modal.component.ts");
+/* harmony import */ var _form_modal_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./form-modal.component */ "./src/app/modal-dialog/form-modal.component.ts");
+
 
 
 
@@ -45555,7 +45596,8 @@ ModalDialogDemoModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _modal_dialog_demo__WEBPACK_IMPORTED_MODULE_6__["ModalDialogDemoComponent"],
             _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__["VetoableModalDialogComponent"],
             _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__["ModalDialogDataGridComponent"],
-            _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"]
+            _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"],
+            _form_modal_component__WEBPACK_IMPORTED_MODULE_12__["FormModalComponent"],
         ],
         exports: [],
         imports: [
@@ -45572,7 +45614,8 @@ ModalDialogDemoModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _nested_modal_dialog_component__WEBPACK_IMPORTED_MODULE_8__["NestedModalDialogComponent"],
             _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__["VetoableModalDialogComponent"],
             _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__["ModalDialogDataGridComponent"],
-            _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"]
+            _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"],
+            _form_modal_component__WEBPACK_IMPORTED_MODULE_12__["FormModalComponent"],
         ],
     })
 ], ModalDialogDemoModule);
@@ -45599,6 +45642,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nested_modal_dialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nested-modal-dialog.component */ "./src/app/modal-dialog/nested-modal-dialog.component.ts");
 /* harmony import */ var _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./vetoable-modal-dialog.component */ "./src/app/modal-dialog/vetoable-modal-dialog.component.ts");
 /* harmony import */ var _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modal-dialog-datagrid.component */ "./src/app/modal-dialog/modal-dialog-datagrid.component.ts");
+/* harmony import */ var _form_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./form-modal.component */ "./src/app/modal-dialog/form-modal.component.ts");
+
 
 
 
@@ -45748,6 +45793,17 @@ let ModalDialogDemoComponent = class ModalDialogDemoComponent {
     openDialogDataGrid() {
         const dialogRef = this.modalService
             .modal(_modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_7__["ModalDialogDataGridComponent"], this.placeholder)
+            .buttons([{ text: 'Cancel', click: () => { dialogRef.close('CANCEL'); } },
+            { text: 'Submit', click: () => { dialogRef.close('SUBMIT'); }, isDefault: true }])
+            .title(this.title)
+            .open()
+            .afterClose(result => {
+            this.closeResult = result;
+        });
+    }
+    openDialogForm() {
+        const dialogRef = this.modalService
+            .modal(_form_modal_component__WEBPACK_IMPORTED_MODULE_8__["FormModalComponent"], this.placeholder)
             .buttons([{ text: 'Cancel', click: () => { dialogRef.close('CANCEL'); } },
             { text: 'Submit', click: () => { dialogRef.close('SUBMIT'); }, isDefault: true }])
             .title(this.title)

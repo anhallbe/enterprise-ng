@@ -15,6 +15,7 @@ import { FullSizeModalDialogComponent } from './example-fullsize-modal.component
 import { NestedModalDialogComponent } from './nested-modal-dialog.component';
 import { VetoableModalDialogComponent } from './vetoable-modal-dialog.component';
 import { ModalDialogDataGridComponent } from './modal-dialog-datagrid.component';
+import { FormModalComponent } from './form-modal.component';
 
 @Component({
   selector: 'app-modal-dialog-demo',
@@ -190,6 +191,19 @@ export class ModalDialogDemoComponent {
   public openDialogDataGrid() {
     const dialogRef = this.modalService
       .modal(ModalDialogDataGridComponent, this.placeholder)
+      .buttons(
+        [{ text: 'Cancel', click: () => { dialogRef.close('CANCEL'); } },
+        { text: 'Submit', click: () => { dialogRef.close('SUBMIT'); }, isDefault: true }])
+      .title(this.title)
+      .open()
+      .afterClose(result => {
+        this.closeResult = result;
+      });
+  }
+
+  openDialogForm() {
+    const dialogRef = this.modalService
+      .modal(FormModalComponent, this.placeholder)
       .buttons(
         [{ text: 'Cancel', click: () => { dialogRef.close('CANCEL'); } },
         { text: 'Submit', click: () => { dialogRef.close('SUBMIT'); }, isDefault: true }])

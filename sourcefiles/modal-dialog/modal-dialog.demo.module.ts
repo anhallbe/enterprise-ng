@@ -14,6 +14,7 @@ import { NestedModalDialogComponent } from './nested-modal-dialog.component';
 import { VetoableModalDialogComponent } from './vetoable-modal-dialog.component';
 import { ModalDialogDataGridComponent } from './modal-dialog-datagrid.component';
 import { FullSizeModalDialogComponent } from './example-fullsize-modal.component';
+import { FormModalComponent } from './form-modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FullSizeModalDialogComponent } from './example-fullsize-modal.component
     ModalDialogDemoComponent,
     VetoableModalDialogComponent,
     ModalDialogDataGridComponent,
-    FullSizeModalDialogComponent
+    FullSizeModalDialogComponent,
+    FormModalComponent,
   ],
   exports: [
   ],
@@ -41,7 +43,8 @@ import { FullSizeModalDialogComponent } from './example-fullsize-modal.component
     NestedModalDialogComponent,
     VetoableModalDialogComponent,
     ModalDialogDataGridComponent,
-    FullSizeModalDialogComponent
+    FullSizeModalDialogComponent,
+    FormModalComponent,
   ],
 })
 export class ModalDialogDemoModule { }

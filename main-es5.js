@@ -31566,6 +31566,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/form-modal.component.html":
+  /*!**********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/form-modal.component.html ***!
+    \**********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppModalDialogFormModalComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"field\">\n  <label class=\"required\">Required Textarea</label>\n  <textarea soho-textarea [resizable]=\"true\" data-validate=\"required\"></textarea>\n</div>\n<div class=\"field\">\n  <label class=\"required\">Required Text Input</label>\n  <input type=\"text\" data-validate=\"required\">\n</div>\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/modal-dialog-datagrid.component.html":
   /*!*********************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/modal-dialog-datagrid.component.html ***!
@@ -31601,7 +31621,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Soho Modal (NEW)</h2>\n    <div class=\"row\">\n      <button id=\"openSimpleBtn\" soho-button (click)=\"openSimple()\">Open {{ dialogRef ? 'Existing' : 'New' }} Modal</button>\n      <input soho-checkbox type=\"checkbox\" id=\"allow-open-checkbox\" [(ngModel)]=\"allowOpen\">\n      <label soho-label for=\"allow-open-checkbox\" [forCheckBox]=\"true\">Allow Open</label>\n    </div>\n    <button id=\"destroyBtn\" soho-button (click)=\"destroyModal()\" *ngIf=\"dialogRef\">Destroy Modal</button>\n    <h2 class=\"fieldset-title\">Soho Modal Dialog</h2>\n    <div class=\"field\">\n      <button id=\"openFullSize\" soho-button (click)=\"openFullSize()\">Full on Tablet</button>\n      <button id=\"open-nested-btn\" soho-button (click)=\"openNested()\">Nested</button>\n      <button id=\"open-message-btn\" soho-button (click)=\"openMessage()\">Message</button>\n      <button id=\"open-vetoable-btn\" soho-button (click)=\"openVetoable()\">Vetoable</button>\n      <button id=\"open-dialog-result-btn\" soho-button (click)=\"openDialogResult()\">Dialog Result</button>\n      <button id=\"open-dialog-datagrid-btn\" soho-button (click)=\"openDialogDataGrid()\">Dialog with DataGrid</button>\n    </div>\n  </div>\n</div>\n\n<div></div>\n\n<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Dialog Options</h2>\n    <div class=\"field\">\n      <label class=\"center-block\">Dialog Title:\n        <input id=\"dialogTitleInput\" soho-input class=\"form-control\" type=\"text\" name=\"title\" [(ngModel)]=\"title\" />\n      </label>\n      <input soho-checkbox id=\"id4\" name=\"isAlert\" [(ngModel)]=\"isAlert\">\n      <label soho-label class=\"center-block\" for=\"id4\" [forCheckBox]=\"true\">Is Alert</label>\n    </div>\n    <p>\n      Last Dialog Result: {{closeResult}}\n    </p>\n  </div>\n</div>\n\n\n<div id=\"modal\" class=\"modal\">\n  <div class=\"modal-content\">\n    <div class=\"modal-header\">\n      <h1 class=\"modal-title\">Add Comment</h1>\n    </div>\n\n    <div class=\"modal-body-wrapper\">\n      <div class=\"modal-body\">\n        <div class=\"row form-responsive no-indent\">\n          <div class=\"full-width column\">\n            <div class=\"field\">\n              <label for=\"context-type\">Type</label>\n              <select class=\"dropdown\" id=\"context-type\" name=\"type\">\n                <option value=\"1\">Context #1</option>\n                <option value=\"2\">Context #2</option>\n                <option value=\"3\">Context #3</option>\n                <option value=\"4\">Context #4</option>\n                <option value=\"5\">Context #5</option>\n              </select>\n            </div>\n\n            <div class=\"field\">\n              <label for=\"context-name\" class=\"required\">Name</label>\n              <input id=\"context-name\"  aria-required=\"true\" name=\"context-name\" type=\"text\"/>\n            </div>\n\n            <div class=\"field\">\n             <label for=\"context-desc\" class=\"required\">Page Title</label>\n             <textarea id=\"context-desc\" aria-required=\"true\" name=\"context-desc\" maxlength=\"50\"></textarea>\n            </div>\n          </div>\n        </div>\n        <div class=\"modal-buttonset\">\n          <button type=\"button\" class=\"btn-modal\">Cancel</button>\n          <button type=\"button\" id=\"submit\" class=\"btn-modal-primary\">Submit</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<br>\n\n<!-- div #dialogPlaceholder will contain the child component -->\n<div #dialogPlaceholder></div>\n";
+    __webpack_exports__["default"] = "<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Soho Modal (NEW)</h2>\n    <div class=\"row\">\n      <button id=\"openSimpleBtn\" soho-button (click)=\"openSimple()\">Open {{ dialogRef ? 'Existing' : 'New' }} Modal</button>\n      <input soho-checkbox type=\"checkbox\" id=\"allow-open-checkbox\" [(ngModel)]=\"allowOpen\">\n      <label soho-label for=\"allow-open-checkbox\" [forCheckBox]=\"true\">Allow Open</label>\n    </div>\n    <button id=\"destroyBtn\" soho-button (click)=\"destroyModal()\" *ngIf=\"dialogRef\">Destroy Modal</button>\n    <h2 class=\"fieldset-title\">Soho Modal Dialog</h2>\n    <div class=\"field\">\n      <button id=\"openFullSize\" soho-button (click)=\"openFullSize()\">Full on Tablet</button>\n      <button id=\"open-nested-btn\" soho-button (click)=\"openNested()\">Nested</button>\n      <button id=\"open-message-btn\" soho-button (click)=\"openMessage()\">Message</button>\n      <button id=\"open-vetoable-btn\" soho-button (click)=\"openVetoable()\">Vetoable</button>\n      <button id=\"open-dialog-result-btn\" soho-button (click)=\"openDialogResult()\">Dialog Result</button>\n      <button id=\"open-dialog-datagrid-btn\" soho-button (click)=\"openDialogDataGrid()\">Dialog with DataGrid</button>\n      <button id=\"open-dialog-datagrid-btn\" soho-button (click)=\"openDialogForm()\">Dialog with TextArea</button>\n    </div>\n  </div>\n</div>\n\n<div></div>\n\n<div class=\"row\">\n  <div class=\"twelve columns\">\n    <h2 class=\"fieldset-title\">Dialog Options</h2>\n    <div class=\"field\">\n      <label class=\"center-block\">Dialog Title:\n        <input id=\"dialogTitleInput\" soho-input class=\"form-control\" type=\"text\" name=\"title\" [(ngModel)]=\"title\" />\n      </label>\n      <input soho-checkbox id=\"id4\" name=\"isAlert\" [(ngModel)]=\"isAlert\">\n      <label soho-label class=\"center-block\" for=\"id4\" [forCheckBox]=\"true\">Is Alert</label>\n    </div>\n    <p>\n      Last Dialog Result: {{closeResult}}\n    </p>\n  </div>\n</div>\n\n\n<div id=\"modal\" class=\"modal\">\n  <div class=\"modal-content\">\n    <div class=\"modal-header\">\n      <h1 class=\"modal-title\">Add Comment</h1>\n    </div>\n\n    <div class=\"modal-body-wrapper\">\n      <div class=\"modal-body\">\n        <div class=\"row form-responsive no-indent\">\n          <div class=\"full-width column\">\n            <div class=\"field\">\n              <label for=\"context-type\">Type</label>\n              <select class=\"dropdown\" id=\"context-type\" name=\"type\">\n                <option value=\"1\">Context #1</option>\n                <option value=\"2\">Context #2</option>\n                <option value=\"3\">Context #3</option>\n                <option value=\"4\">Context #4</option>\n                <option value=\"5\">Context #5</option>\n              </select>\n            </div>\n\n            <div class=\"field\">\n              <label for=\"context-name\" class=\"required\">Name</label>\n              <input id=\"context-name\"  aria-required=\"true\" name=\"context-name\" type=\"text\"/>\n            </div>\n\n            <div class=\"field\">\n             <label for=\"context-desc\" class=\"required\">Page Title</label>\n             <textarea id=\"context-desc\" aria-required=\"true\" name=\"context-desc\" maxlength=\"50\"></textarea>\n            </div>\n          </div>\n        </div>\n        <div class=\"modal-buttonset\">\n          <button type=\"button\" class=\"btn-modal\">Cancel</button>\n          <button type=\"button\" id=\"submit\" class=\"btn-modal-primary\">Submit</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<br>\n\n<!-- div #dialogPlaceholder will contain the child component -->\n<div #dialogPlaceholder></div>\n";
     /***/
   },
 
@@ -63039,6 +63059,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/modal-dialog/form-modal.component.ts":
+  /*!******************************************************!*\
+    !*** ./src/app/modal-dialog/form-modal.component.ts ***!
+    \******************************************************/
+
+  /*! exports provided: FormModalComponent */
+
+  /***/
+  function srcAppModalDialogFormModalComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "FormModalComponent", function () {
+      return FormModalComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var FormModalComponent = function FormModalComponent() {
+      _classCallCheck(this, FormModalComponent);
+    };
+
+    FormModalComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./form-modal.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/modal-dialog/form-modal.component.html")).default
+    })], FormModalComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/modal-dialog/groups.json":
   /*!******************************************!*\
     !*** ./src/app/modal-dialog/groups.json ***!
@@ -63249,18 +63313,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ./example-fullsize-modal.component */
     "./src/app/modal-dialog/example-fullsize-modal.component.ts");
+    /* harmony import */
+
+
+    var _form_modal_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./form-modal.component */
+    "./src/app/modal-dialog/form-modal.component.ts");
 
     var ModalDialogDemoModule = function ModalDialogDemoModule() {
       _classCallCheck(this, ModalDialogDemoModule);
     };
 
     ModalDialogDemoModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_nested_modal_dialog_component__WEBPACK_IMPORTED_MODULE_8__["NestedModalDialogComponent"], _example_modal_dialog_component__WEBPACK_IMPORTED_MODULE_7__["ExampleModalDialogComponent"], _modal_dialog_demo__WEBPACK_IMPORTED_MODULE_6__["ModalDialogDemoComponent"], _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__["VetoableModalDialogComponent"], _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__["ModalDialogDataGridComponent"], _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"]],
+      declarations: [_nested_modal_dialog_component__WEBPACK_IMPORTED_MODULE_8__["NestedModalDialogComponent"], _example_modal_dialog_component__WEBPACK_IMPORTED_MODULE_7__["ExampleModalDialogComponent"], _modal_dialog_demo__WEBPACK_IMPORTED_MODULE_6__["ModalDialogDemoComponent"], _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__["VetoableModalDialogComponent"], _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__["ModalDialogDataGridComponent"], _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"], _form_modal_component__WEBPACK_IMPORTED_MODULE_12__["FormModalComponent"]],
       exports: [],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"], ids_enterprise_ng__WEBPACK_IMPORTED_MODULE_5__["SohoComponentsModule"]],
       providers: [],
       entryComponents: [// You need to add any 'dynamic' components to the entry components otherwise the factory can't find them.
-      _example_modal_dialog_component__WEBPACK_IMPORTED_MODULE_7__["ExampleModalDialogComponent"], _nested_modal_dialog_component__WEBPACK_IMPORTED_MODULE_8__["NestedModalDialogComponent"], _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__["VetoableModalDialogComponent"], _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__["ModalDialogDataGridComponent"], _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"]]
+      _example_modal_dialog_component__WEBPACK_IMPORTED_MODULE_7__["ExampleModalDialogComponent"], _nested_modal_dialog_component__WEBPACK_IMPORTED_MODULE_8__["NestedModalDialogComponent"], _vetoable_modal_dialog_component__WEBPACK_IMPORTED_MODULE_9__["VetoableModalDialogComponent"], _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_10__["ModalDialogDataGridComponent"], _example_fullsize_modal_component__WEBPACK_IMPORTED_MODULE_11__["FullSizeModalDialogComponent"], _form_modal_component__WEBPACK_IMPORTED_MODULE_12__["FormModalComponent"]]
     })], ModalDialogDemoModule);
     /***/
   },
@@ -63332,6 +63402,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _modal_dialog_datagrid_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! ./modal-dialog-datagrid.component */
     "./src/app/modal-dialog/modal-dialog-datagrid.component.ts");
+    /* harmony import */
+
+
+    var _form_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./form-modal.component */
+    "./src/app/modal-dialog/form-modal.component.ts");
 
     var ModalDialogDemoComponent =
     /*#__PURE__*/
@@ -63547,6 +63623,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             isDefault: true
           }]).title(this.title).open().afterClose(function (result) {
             _this529.closeResult = result;
+          });
+        }
+      }, {
+        key: "openDialogForm",
+        value: function openDialogForm() {
+          var _this530 = this;
+
+          var dialogRef = this.modalService.modal(_form_modal_component__WEBPACK_IMPORTED_MODULE_8__["FormModalComponent"], this.placeholder).buttons([{
+            text: 'Cancel',
+            click: function click() {
+              dialogRef.close('CANCEL');
+            }
+          }, {
+            text: 'Submit',
+            click: function click() {
+              dialogRef.close('SUBMIT');
+            },
+            isDefault: true
+          }]).title(this.title).open().afterClose(function (result) {
+            _this530.closeResult = result;
           });
         }
       }]);
@@ -64241,11 +64337,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onChangeColor",
         value: function onChangeColor(event) {
-          var _this530 = this;
+          var _this531 = this;
 
           var colorIdArray = Object.keys(this.personalize.personalizationColors());
           var colorId = colorIdArray.find(function (cid) {
-            return _this530.personalize.personalizationColors()[cid].value === event.data.colors;
+            return _this531.personalize.personalizationColors()[cid].value === event.data.colors;
           });
 
           if (colorId === this.currentColorId) {
@@ -64500,7 +64596,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PopDownDemoComponent, [{
         key: "onSelected",
         value: function onSelected(event) {
-          var _this531 = this;
+          var _this532 = this;
 
           this.selectedStates = [];
 
@@ -64509,7 +64605,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               var data = $(item).attr('data');
               console.log(data);
 
-              _this531.selectedStates.push(data);
+              _this532.selectedStates.push(data);
             });
             this.changeDetector.detectChanges();
           }
@@ -65065,14 +65161,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(RadioButtonDemoComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this532 = this;
+          var _this533 = this;
 
           // build model and form group
           var group = [];
           var keys = Object.keys(this.fieldSpec);
           Object.keys(this.fieldSpec).map(function (item, index, ary) {
-            _this532.model[item] = {
-              value: _this532.dataView[item].value
+            _this533.model[item] = {
+              value: _this533.dataView[item].value
             };
             group[item] = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]();
           });
@@ -65211,7 +65307,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*#__PURE__*/
     function () {
       function SearchFieldDemoComponent() {
-        var _this533 = this;
+        var _this534 = this;
 
         _classCallCheck(this, SearchFieldDemoComponent);
 
@@ -65229,7 +65325,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           filterMode: 'contains',
           delay: 500,
           source: function source(query, done) {
-            _this533.objectBasedData().subscribe(function (items) {
+            _this534.objectBasedData().subscribe(function (items) {
               done(query, items);
             });
           }
@@ -66004,13 +66100,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StepProcessBtnDisableDemoComponent, [{
         key: "ngAfterViewInit",
         value: function ngAfterViewInit() {
-          var _this534 = this;
+          var _this535 = this;
 
           this.sohoStepProcessComponent.previousButtonEnable = false;
           this.sohoStepProcessComponent.nextButtonEnable = false;
           setTimeout(function () {
-            _this534.sohoStepProcessComponent.previousButtonEnable = true;
-            _this534.sohoStepProcessComponent.nextButtonEnable = true;
+            _this535.sohoStepProcessComponent.previousButtonEnable = true;
+            _this535.sohoStepProcessComponent.nextButtonEnable = true;
           }, 5000);
         }
       }]);
@@ -66191,19 +66287,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _inherits(SwapListDemoService, _ids_enterprise_ng__W4);
 
       function SwapListDemoService() {
-        var _this535;
+        var _this536;
 
         _classCallCheck(this, SwapListDemoService);
 
-        _this535 = _possibleConstructorReturn(this, _getPrototypeOf(SwapListDemoService).call(this));
-        _this535.options = {};
-        _this535.availableDemoItems = [];
-        _this535.selectedDemoItems = [];
-        _this535.additionalDemoItems = [];
+        _this536 = _possibleConstructorReturn(this, _getPrototypeOf(SwapListDemoService).call(this));
+        _this536.options = {};
+        _this536.availableDemoItems = [];
+        _this536.selectedDemoItems = [];
+        _this536.additionalDemoItems = [];
 
-        _this535.init();
+        _this536.init();
 
-        return _this535;
+        return _this536;
       }
 
       _createClass(SwapListDemoService, [{
@@ -66885,14 +66981,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateData",
         value: function updateData(event) {
-          var _this536 = this;
+          var _this537 = this;
 
           this.service.getData().subscribe(function (d) {
-            _this536.busyIndicator.open();
+            _this537.busyIndicator.open();
 
-            _this536.swapListComponent.updateDataset(d);
+            _this537.swapListComponent.updateDataset(d);
 
-            _this536.busyIndicator.close(true);
+            _this537.busyIndicator.close(true);
           });
         }
       }, {
@@ -68362,7 +68458,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*#__PURE__*/
     function () {
       function ToolbarFlexMoreActionsAjaxDemoComponent() {
-        var _this537 = this;
+        var _this538 = this;
 
         _classCallCheck(this, ToolbarFlexMoreActionsAjaxDemoComponent);
 
@@ -68373,20 +68469,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.onBeforeContextMenuOpen = function (response, options) {
           if (options.hasOwnProperty('contextElement')) {
             if (options.contextElement[0].parentElement.parentElement.id === 'menu-button') {
-              response(_this537.MENU_BUTTON_RESPONSE_HTML);
+              response(_this538.MENU_BUTTON_RESPONSE_HTML);
               return;
             }
 
-            response(_this537.SUBMENU_RESPONSE_HTML);
+            response(_this538.SUBMENU_RESPONSE_HTML);
             return;
           } else {
-            response(_this537.MENU_RESPONSE_HTML);
+            response(_this538.MENU_RESPONSE_HTML);
             return;
           }
         };
 
         this.onBeforeMenuButtonOpen = function (response, options) {
-          response(_this537.MENU_BUTTON_RESPONSE_HTML);
+          response(_this538.MENU_BUTTON_RESPONSE_HTML);
           return;
         };
       }
@@ -68740,18 +68836,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onMenuItemMouseOver",
         value: function onMenuItemMouseOver(event) {
-          var _this538 = this;
+          var _this539 = this;
 
           var button = JSON.parse(event[0].dataset.action);
 
           if (button.btn === 'actions' && !this.actionsLoaded) {
             this.toolbarDataDrivenDemoService.getToolbarData().then(function (items) {
-              _this538.buttons[_this538.buttons.length - 1].menu = items.data;
-              _this538.actionsLoaded = true; // TODO: this does not work properly
+              _this539.buttons[_this539.buttons.length - 1].menu = items.data;
+              _this539.actionsLoaded = true; // TODO: this does not work properly
               // Update toolbar after new data items have been retrieved
 
               setTimeout(function () {
-                _this538.updated();
+                _this539.updated();
               }, 1);
             });
           }
@@ -68908,7 +69004,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*#__PURE__*/
     function () {
       function ToolbarMoreActionsAjaxDemoComponent() {
-        var _this539 = this;
+        var _this540 = this;
 
         _classCallCheck(this, ToolbarMoreActionsAjaxDemoComponent);
 
@@ -68917,10 +69013,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.onBeforeContextMenuOpen = function (response, options) {
           if (options.hasOwnProperty('contextElement')) {
-            response(_this539.SUBMENU_RESPONSE_HTML);
+            response(_this540.SUBMENU_RESPONSE_HTML);
             return;
           } else {
-            response(_this539.MENU_RESPONSE_HTML);
+            response(_this540.MENU_RESPONSE_HTML);
             return;
           }
         };
@@ -69616,7 +69712,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /*#__PURE__*/
     function () {
       function TrackDirtyDemoComponent() {
-        var _this540 = this;
+        var _this541 = this;
 
         _classCallCheck(this, TrackDirtyDemoComponent);
 
@@ -69630,7 +69726,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.onLookupClick = function (event) {
           var data = [JSON.parse("{\"data\":{\n    \"fields\": {\n      \"RelationshipToOrganization\": {\n        \"value\": \"CONSULTANT\"\n      }\n    }}}")];
 
-          _this540.sohoLookup.setValue(data);
+          _this541.sohoLookup.setValue(data);
         };
 
         this.onLookupField = function (data) {
@@ -69942,13 +70038,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _inherits(TreeDemoService, _ids_enterprise_ng__W5);
 
       function TreeDemoService() {
-        var _this541;
+        var _this542;
 
         _classCallCheck(this, TreeDemoService);
 
-        _this541 = _possibleConstructorReturn(this, _getPrototypeOf(TreeDemoService).call(this));
-        _this541.demoData = new _tree_data_demo__WEBPACK_IMPORTED_MODULE_4__["TreeDemoData"]();
-        return _this541;
+        _this542 = _possibleConstructorReturn(this, _getPrototypeOf(TreeDemoService).call(this));
+        _this542.demoData = new _tree_data_demo__WEBPACK_IMPORTED_MODULE_4__["TreeDemoData"]();
+        return _this542;
       }
 
       _createClass(TreeDemoService, [{
@@ -70104,10 +70200,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "ngAfterViewInit",
         value: function ngAfterViewInit() {
-          var _this542 = this;
+          var _this543 = this;
 
           setTimeout(function () {
-            return _this542.reset();
+            return _this543.reset();
           });
         }
       }, {
@@ -70651,14 +70747,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buildModel",
         value: function buildModel() {
-          var _this543 = this;
+          var _this544 = this;
 
           // build model and form group
           var group = [];
           Object.keys(this.dataView).map(function (item, index, ary) {
-            var required = _this543.dataView[item].required;
-            _this543.model[item] = {
-              value: _this543.dataView[item].value,
+            var required = _this544.dataView[item].required;
+            _this544.model[item] = {
+              value: _this544.dataView[item].value,
               required: required
             };
             group[item] = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]('');
@@ -70854,7 +70950,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createForm",
         value: function createForm() {
-          var _this544 = this;
+          var _this545 = this;
 
           // note - both controls have the .required validator.
           this.demoForm = this.formBuilder.group({
@@ -70863,7 +70959,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             datepick: [this.datevalue]
           });
           this.demoForm.valueChanges.subscribe(function (data) {
-            return _this544.onValueChanged(data);
+            return _this545.onValueChanged(data);
           });
         }
       }, {
@@ -71217,30 +71313,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(WizardDemoResultPageComponent, [{
         key: "ngAfterViewInit",
         value: function ngAfterViewInit() {
-          var _this545 = this;
+          var _this546 = this;
 
           this.busyindicator.text = "Importing ".concat(this.current, " of ").concat(this.total, " ...");
           this.page.activated.subscribe(function (e) {
-            _this545.current = 0;
-            _this545.validated = 0;
+            _this546.current = 0;
+            _this546.validated = 0;
 
-            _this545.busyindicator.open();
+            _this546.busyindicator.open();
 
-            _this545.busyindicator.text = "Imported ".concat(_this545.current, " of ").concat(_this545.total, " ...");
+            _this546.busyindicator.text = "Imported ".concat(_this546.current, " of ").concat(_this546.total, " ...");
 
-            if (_this545.progress) {
-              _this545.progress.progressValue = _this545.current / _this545.total * 100;
+            if (_this546.progress) {
+              _this546.progress.progressValue = _this546.current / _this546.total * 100;
             }
 
             setTimeout(function () {
-              _this545.update();
+              _this546.update();
             }, 5000);
           });
         }
       }, {
         key: "update",
         value: function update() {
-          var _this546 = this;
+          var _this547 = this;
 
           this.current++;
           this.validated++;
@@ -71253,7 +71349,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           if (this.current < this.total) {
             setTimeout(function () {
-              _this546.update();
+              _this547.update();
             }, 3000);
           } else {
             this.busyindicator.close(false);
@@ -71516,7 +71612,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       //   { label: 'Result', href: 'result'}
       // ];
       function WizardDemoComponent(toastService) {
-        var _this547 = this;
+        var _this548 = this;
 
         _classCallCheck(this, WizardDemoComponent);
 
@@ -71525,31 +71621,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           id: 'prevous',
           text: Soho.Locale.translate('Previous'),
           click: function click() {
-            _this547.wizard.previous();
+            _this548.wizard.previous();
           },
           disabled: function disabled() {
-            return !_this547.wizard.hasPrevious();
+            return !_this548.wizard.hasPrevious();
           },
           position: 'middle'
         }, {
           id: 'next',
           text: Soho.Locale.translate('Next'),
           click: function click() {
-            _this547.wizard.next();
+            _this548.wizard.next();
           },
           isDefault: true,
           disabled: function disabled() {
-            return _this547.nextButtonDisabled();
+            return _this548.nextButtonDisabled();
           },
           position: 'middle'
         }, {
           id: 'finish',
           text: 'Finish',
           click: function click() {
-            _this547.wizard.finish();
+            _this548.wizard.finish();
           },
           disabled: function disabled() {
-            return !_this547.wizard.hasFinished();
+            return !_this548.wizard.hasFinished();
           },
           position: 'middle'
         }];
